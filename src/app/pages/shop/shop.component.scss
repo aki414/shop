@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2em 0.4em;
+  transition: all 0.3s ease-in-out;
+
+  .product-container {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    padding: 4em 0em;
+    grid-template-columns: repeat(2, minmax(8em, 1fr));
+    gap: 1em;
+    border-bottom: 0.01em solid #ddd;
+  }
+}
+@media screen and (min-width: "768px") {
+  main {
+    .product-container {
+      grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+    }
+  }
+}

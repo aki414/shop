@@ -1,0 +1,39 @@
+<section class="shoe-container">
+  <div class="shoe-image">
+    <img [src]="product.image" [alt]="product.name" />
+  </div>
+
+  <section class="shoe-details">
+    <h1>{{ product.name }}</h1>
+    <p class="category">{{ product.category }}</p>
+    <p class="price">{{ product.price }} € <span>+ Livraison gratuite</span></p>
+
+    <form [formGroup]="productForm">
+      <div class="actions">
+        <button
+          class="add-to-cart button-base"
+          [disabled]="productIsNotAvailable"
+          (click)="addProductToCart()"
+        >
+          Ajouter au panier
+          <i class="pi pi-shopping-cart"></i>
+        </button>
+        <button class="add-to-favorites button-base">
+          Ajouter aux favoris
+          <i class="pi pi-heart"></i>
+        </button>
+      </div>
+    </form>
+    <div class="tabs">
+      <div class="card flex justify-content-center">
+        <p-accordion [multiple]="true">
+          <p-accordionTab header="Description">
+            <p>
+              {{ product.description }}
+            </p>
+          </p-accordionTab>
+        </p-accordion>
+      </div>
+    </div>
+  </section>
+</section>
