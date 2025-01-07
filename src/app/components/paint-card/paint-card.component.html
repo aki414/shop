@@ -1,0 +1,15 @@
+<section class="paint-card" (click)="redirectToShopDetails(product.id)">
+  <div class="paint-image">
+    <img [src]="product.image" [alt]="product.name" />
+  </div>
+  <section class="paint-info">
+    <h3 class="paint-name">{{ product.name }}</h3>
+    <p class="paint-description">
+      {{ product.title }}
+    </p>
+    <p class="paint-description">
+      {{ product.category }}
+    </p>
+    <p class="paint-price">{{ product.price }} DT</p>
+  </section>
+</section>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShoesCardComponent } from '../../components/shoes-card/shoes-card.component';
+import { paintsCardComponent } from '../../components/paint-card/paint-card.component';
 import { AccordionModule } from 'primeng/accordion';
 import { ProductService } from '../../services/product-service/product.service';
 import CatalogProduct from '../../model/CatalogProduct';
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [ShoesCardComponent, AccordionModule, CommonModule],
+  imports: [paintsCardComponent, AccordionModule, CommonModule],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss',
 })

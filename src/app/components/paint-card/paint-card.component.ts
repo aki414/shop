@@ -6,13 +6,13 @@ import CartProduct from '../../model/CartProduct';
 import { ToastService } from '../../services/toast/toast.service';
 
 @Component({
-  selector: 'app-shoes-card',
+  selector: 'app-paints-card',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './shoes-card.component.html',
-  styleUrl: './shoes-card.component.scss',
+  templateUrl: './paint-card.component.html',
+  styleUrl: './paint-card.component.scss',
 })
-export class ShoesCardComponent {
+export class paintsCardComponent {
   constructor(private router: Router, private toastService: ToastService) {}
 
   @Input() product!: CatalogProduct;

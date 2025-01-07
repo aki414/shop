@@ -1,5 +1,5 @@
 @import "../../../styles/variables.scss";
-.shoe-card {
+.paint-card {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -7,7 +7,7 @@
   transition: transform 0.3s ease;
   overflow: hidden;
 
-  .shoe-image {
+  .paint-image {
     width: 100%;
     height: 8em;
     background-color: #ececec;
@@ -19,24 +19,24 @@
     }
   }
 
-  .shoe-info {
+  .paint-info {
     padding: 0.4em 0;
     text-align: left;
 
-    .shoe-name {
+    .paint-name {
       font-size: 1em;
       font-weight: 600;
       margin-bottom: 0.5em;
     }
 
-    .shoe-description {
+    .paint-description {
       font-family: "Antonio" sans-serif;
       font-size: 1em;
       color: #555;
       margin-bottom: 0.4em;
     }
 
-    .shoe-price {
+    .paint-price {
       font-size: 1em;
       margin-bottom: 1em;
       font-weight: 600;
@@ -95,23 +95,23 @@
 }
 
 @media screen and (min-width: "390px") {
-  .shoe-card {
-    .shoe-image {
+  .paint-card {
+    .paint-image {
       height: 12em;
     }
   }
 }
 
 @media screen and (min-width: "576px") {
-  .shoe-card {
-    .shoe-image {
+  .paint-card {
+    .paint-image {
       height: 18em;
     }
   }
 }
 @media screen and (min-width: "768px") {
-  .shoe-card {
-    .shoe-image {
+  .paint-card {
+    .paint-image {
       height: 22em;
     }
   }
